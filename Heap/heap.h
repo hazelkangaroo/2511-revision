@@ -13,10 +13,10 @@ struct HeapRep *Heap;
 
 //Functions:
 //Creating new heap with N slots
-Heap newHeap(int N)
+Heap newHeap(int N);
 	
 //Inserting an item into heap
-Heap HeapInsert(Heap h, Item it)
+void HeapInsert(Heap h, Item it);
 	
 //fix up Heap to keep it balanced
-void Fixup(Item a[], int i)
+void Fixup(Item a[], int i);
