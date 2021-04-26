@@ -20,3 +20,8 @@ void HeapInsert(Heap h, Item it);
 	
 //fix up Heap to keep it balanced
 void Fixup(Item a[], int i);
+
+//Deleting an item
+Item HeapDelete(Heap h);
+
+void FixDown(Item a[], int i, int N);
