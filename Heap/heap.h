@@ -6,8 +6,12 @@ tyepdef struct HeapRep{
 	int nitems;
 	int nslots;
 }HeapRep;
-//Functions:
 
+struct HeapRep *Heap;
+
+
+
+//Functions:
 //Creating new heap with N slots
 Heap newHeap(int N)
 	
