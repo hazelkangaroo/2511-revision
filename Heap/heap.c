@@ -35,7 +35,24 @@ Item HeapDelete(Heap h) {
 	fixDown(h->items, 1, h->items[nitems];
 	return re;
   }
-		
+	
+//force value at a[i] into correct position
+//N is max index
+void fixDown(Item a[], int i, int N) {
+		while (a < N) {
+			int j = i*2
+			if (a[j+1] > a[j]) {
+				j++;
+			}
+			if (a[i] > a[j]) {
+				break;
+			}
+			int temp = a[i];
+			a[i] = a[j];
+			a[j] = temp;
+			i = j;
+		}
+}
 
             
             
